@@ -1,5 +1,6 @@
 package FominaKat.Composite;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -9,6 +10,7 @@ public class BoxToys implements Component {
     private List<Component> box;
 
     public BoxToys() {
+        this.box = new ArrayList<>();
     }
 
     public void add(Component item) {
