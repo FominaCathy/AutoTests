@@ -3,6 +3,9 @@ package FominaKat.MontyHall;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * класс описания игры
+ */
 public class GameMontyHall {
     private List<Door> doorList;
     private int choice;

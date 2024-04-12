@@ -4,6 +4,9 @@ import FominaKat.MontyHall.GameMontyHall;
 
 import java.util.Random;
 
+/**
+ *
+ */
 public class Main {
 
     private static Random random = new Random();

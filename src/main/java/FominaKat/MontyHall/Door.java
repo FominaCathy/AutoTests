@@ -1,5 +1,8 @@
 package FominaKat.MontyHall;
 
+/**
+ * класс описания дверей
+ */
 public class Door {
     private boolean prise;
 
