@@ -17,24 +17,15 @@ public class BoxToys implements Component {
         box.add(item);
     }
 
-    public boolean remove(Component item) {
-        if (box.contains(item)) {
-            box.remove(item);
-            return true;
-        }
-        return false;
-    }
-
-    public List<Component> get() {
-        return box;
-    }
 
     @Override
-    public int execute() {
+    public int getCost() {
         int summ = 0;
         for (Component item : box) {
-            summ += item.execute();
+            summ += item.getCost();
         }
         return summ;
     }
+
+
 }

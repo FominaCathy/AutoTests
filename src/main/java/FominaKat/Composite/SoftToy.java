@@ -14,7 +14,7 @@ public class SoftToy implements Component {
     }
 
     @Override
-    public int execute() {
+    public int getCost() {
         return cost;
     }
 }

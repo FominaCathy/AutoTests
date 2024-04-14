@@ -27,10 +27,10 @@ public class Main {
         allToys.add(litleBox);
         allToys.add(new SoftToy("beer", 10));
 
-        System.out.println("catBox = " + catBox.execute());
-        System.out.println("litleBox = " + litleBox.execute());
-        System.out.println("middleBox = " + middleBox.execute());
-        System.out.println("allToys = " + allToys.execute());
+        System.out.println("catBox = " + catBox.getCost());
+        System.out.println("litleBox = " + litleBox.getCost());
+        System.out.println("middleBox = " + middleBox.getCost());
+        System.out.println("allToys = " + allToys.getCost());
 
 
     }
