@@ -7,6 +7,12 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CompositeTest {
 
+    /**
+     * Тест для коробки только с игрушками
+     *
+     * @param boxToys   - коробки с игрушками (только ингрушк)
+     * @param totalCost - ст-ть коробки
+     */
     @ParameterizedTest(name = "{index}- коробка с игрушками, ст-тью = {1}")
     @DisplayName("Проверка получения ст-ти коробки только с игрушками")
     @MethodSource("BoxArgumentProvider#unitBox")
@@ -14,6 +20,13 @@ public class CompositeTest {
 
         assertEquals(totalCost, boxToys.getCost());
     }
+
+    /**
+     * Тест для сборных коробок с игрушками (коробки и игрушки)
+     *
+     * @param boxToys   сборная коробка (коробки и игрушки внутри)
+     * @param totalCost общая ст-ть коробки
+     */
 
     @ParameterizedTest(name = "{index}- коробка с игрушками и коробками, ст-тью = {1}")
     @DisplayName("Проверка получения ст-ти коробки с игрушками и вложенными коробками")

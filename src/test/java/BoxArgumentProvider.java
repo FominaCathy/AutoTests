@@ -6,7 +6,10 @@ import org.junit.jupiter.params.provider.Arguments;
 import java.util.stream.Stream;
 
 public class BoxArgumentProvider {
-
+    /**
+     * коробки только с игрушками
+     * @return
+     */
     public static Stream<Arguments> unitBox() {
         BoxToys catBox = new BoxToys();
         catBox.add(new SoftToy("cat", 4));
@@ -21,7 +24,10 @@ public class BoxArgumentProvider {
                 Arguments.of(littleBox, 4));
     }
 
-
+    /**
+     * сборные коробки игрушки и
+     * @return
+     */
     public static Stream<Arguments> combineBox() {
         BoxToys allToys = new BoxToys();
 
