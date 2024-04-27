@@ -1,4 +1,4 @@
-package ProjectSQL;
+package FominaKat.ProjectSQL;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
@@ -12,7 +12,7 @@ public class AbstractSQLTest {
     private static Connection connection;
 
     @BeforeAll
-    static void init() throws ClassNotFoundException, SQLException {
+    static void init()  {
 
         try {
             Class.forName("org.sqlite.JDBC");
