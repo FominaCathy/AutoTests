@@ -7,12 +7,12 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class AbstractSQLTest {
+public abstract class AbstractSQLTest {
 
     private static Connection connection;
 
     @BeforeAll
-    static void init()  {
+    static void init() throws ClassNotFoundException, SQLException {
 
         try {
             Class.forName("org.sqlite.JDBC");

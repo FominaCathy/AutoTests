@@ -8,7 +8,7 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 
 
-abstract class AbstractTestHibernate {
+abstract class AbstractHQLTest {
 
     private static SessionFactory sessionFactory;
 
